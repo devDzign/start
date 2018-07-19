@@ -13,17 +13,17 @@ class KnpUIpsum
 
     private $minSunshine;
     /**
-     * @var KnpUWordProvider
+     * @var WordProviderInterface
      */
     private $wordProvider;
 
     /**
      * KnpUIpsum constructor.
-     * @param KnpUWordProvider $wordProvider
+     * @param WordProviderInterface $wordProvider
      * @param bool $unicornsAreReal
      * @param int $minSunshine
      */
-    public function __construct(KnpUWordProvider $wordProvider, bool $unicornsAreReal = true, $minSunshine = 3)
+    public function __construct(WordProviderInterface $wordProvider, bool $unicornsAreReal = true, $minSunshine = 3)
     {
         $this->unicornsAreReal = $unicornsAreReal;
         $this->minSunshine = $minSunshine;
